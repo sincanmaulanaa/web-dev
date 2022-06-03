@@ -43,6 +43,7 @@ nav ul {
 nav .logo {
   font-weight: 600;
   color: #313131;
+  font-size: 22px;
 }
 
 nav ul li {
@@ -472,6 +473,7 @@ section#information {
   margin: 0 auto;
   justify-content: space-between;
   max-width: 1024px;
+  flex-wrap: wrap;
 }
 
 section#information > div {
@@ -728,7 +730,7 @@ nav svg {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     background-color: #f2f2f2;
     padding: 0 20px;
@@ -783,7 +785,7 @@ nav svg {
   }
 
   section#service {
-    padding: 80px 0;
+    padding: 100px 0;
     width: 100%;
     margin: 0 auto;
   }
@@ -813,7 +815,7 @@ nav svg {
   }
 
   section#portfolio {
-    padding: 80px 4px;
+    padding: 100px 4px;
     width: 100%;
     margin: 0 auto;
   }
@@ -835,7 +837,7 @@ nav svg {
 
   section#testimonial {
     margin: 0 auto;
-    padding: 80px 0;
+    padding: 100px 0;
   }
 
   section#testimonial .testimonials-wrapper {
@@ -852,7 +854,7 @@ nav svg {
   aside {
     width: 100%;
     margin: 0 auto;
-    padding: 80px 0;
+    padding: 100px 0;
     text-align: center;
   }
 
@@ -879,10 +881,11 @@ nav svg {
     font-size: 35px;
     line-height: 50px;
     font-weight: 500;
+    max-width: 300px;
   }
 
   section#information {
-    padding-top: 80px;
+    padding-top: 100px;
     display: block;
     width: 100%;
   }
@@ -970,5 +973,9 @@ nav svg {
   footer p {
     text-align: center;
     font-size: 16px;
+  }
+
+  .to-top {
+    display: none;
   }
 }
