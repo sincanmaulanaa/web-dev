@@ -563,6 +563,21 @@ nav svg {
   display: none;
 }
 
+.back-to-top {
+  position: fixed;
+  z-index: 9999;
+  bottom: 0;
+  right: 0;
+  background-color: #49ad09;
+  margin: 30px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
 /* Desktop View */
 @media (min-width: 768px) {
   body {
@@ -647,7 +662,8 @@ nav svg {
   }
   header {
     background-color: #f2f2f2;
-    position: absolute;
+    position: sticky;
+    top: 0;
     z-index: 99;
     margin: 0;
     padding: 20px 10px;
@@ -656,18 +672,33 @@ nav svg {
   nav {
     margin: auto;
     width: 90%;
+    position: relative;
   }
 
   nav ul {
     list-style: none;
-    display: none;
+    position: absolute;
     align-items: center;
     text-align: center;
+    right: 0;
+    top: 30px;
+    background-color: white;
+    width: 60%;
+    padding: 20px 40px;
+    border-radius: 5px;
+    border: 1px solid #31313149;
+    box-shadow: 0px 100px 80px rgba(49, 49, 49, 0.1);
+    text-align: left;
+  }
+
+  .hidden {
+    display: none;
   }
 
   nav .logo {
     font-weight: 600;
     color: #313131;
+    font-size: 20px;
   }
 
   nav svg {
@@ -675,7 +706,7 @@ nav svg {
   }
 
   nav ul li {
-    margin: 0 20px;
+    margin: 20px 0;
   }
 
   ul li a {
@@ -683,8 +714,13 @@ nav svg {
     color: #313131;
     font-weight: 400;
     display: inline-block;
-    margin-block: 2px;
+    margin: 2px;
     position: relative;
+  }
+
+  ul li button {
+    padding: 8px 18px;
+    font-size: 14px;
   }
 
   main {

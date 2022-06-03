@@ -13,7 +13,7 @@
 	<header>
 		<nav>
 			<span class="logo">Web.Dev</span>
-			<ul>
+			<ul class="hidden" id="nav-menu">
 				<li><a href="#">Beranda</a></li>
 				<li><a href="#service">Layanan</a></li>
 				<li><a href="#portfolio">Portfolio</a></li>
@@ -23,9 +23,9 @@
 				</li>
 			</ul>
 
-			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+			<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
 				stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-				class="feather feather-menu">
+				class="feather feather-menu" id="burger-icon">
 				<line x1="3" y1="12" x2="21" y2="12"></line>
 				<line x1="3" y1="6" x2="21" y2="6"></line>
 				<line x1="3" y1="18" x2="21" y2="18"></line>
@@ -491,6 +491,15 @@
 	<footer>
 		<p>Copyright 2022 &copy;Sincan Maulana All rights reserved.</p>
 	</footer>
+
+	<a href="#" class="to-top">
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+			stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+			class="feather feather-arrow-up">
+			<line x1="12" y1="19" x2="12" y2="5"></line>
+			<polyline points="5 12 12 5 19 12"></polyline>
+		</svg>
+	</a>
 
 
 	<script src="./assets/js/script.js"></script>
