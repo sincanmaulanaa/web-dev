@@ -559,7 +559,7 @@ nav svg {
 }
 
 /* Desktop View */
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   body {
     font-size: 14px;
   }
@@ -635,7 +635,7 @@ nav svg {
   }
 }
 
-@media screen and (max-device-width: 525px) {
+@media (max-width: 640px) {
   body {
     font-size: 14px;
   }
@@ -741,8 +741,9 @@ nav svg {
   }
 
   section#service {
-    padding: 80px 4px;
-    width: 100%;
+    padding: 80px 0;
+    width: 90%;
+    margin: 0 auto;
   }
 
   section#service span {
@@ -796,19 +797,19 @@ nav svg {
   }
 
   aside {
-    width: 100%;
-    padding: 80px 0;
+    width: 80%;
+    margin: 0 auto;
+    padding: 80px 4px;
   }
 
   aside .developers-wrapper {
     flex-direction: column;
-    padding: 0 4px;
   }
 
   .developers-wrapper .developer-item {
     max-width: 350px;
     padding: 60px 50px;
-    margin: 20px 14px;
+    margin: 20px 0px;
   }
 
   section#message {
