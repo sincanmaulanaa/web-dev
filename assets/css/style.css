@@ -226,6 +226,10 @@ h3 {
   flex-wrap: wrap;
 }
 
+section#service .hidden {
+  display: none;
+}
+
 .service-card {
   width: 400px;
   border-radius: 5px;
@@ -276,6 +280,10 @@ h3 {
 
 .display {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 section#portfolio {
@@ -812,7 +820,7 @@ nav svg {
   }
 
   .display {
-    display: inline-block;
+    display: block;
   }
 
   section#portfolio {
