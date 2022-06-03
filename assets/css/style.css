@@ -398,6 +398,7 @@ aside .developers-wrapper {
 
 .developers-wrapper .developer-item {
   max-width: 400px;
+  min-width: 260px;
   padding: 40px 50px;
   margin: 0 14px;
   border-radius: 5px;
