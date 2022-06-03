@@ -2,10 +2,10 @@
 const moreServices = document.getElementById("more-services");
 const moreBtn = document.getElementById("more");
 
-moreServices.style.display = "none";
+moreServices.classList.add("hidden");
 
 moreBtn.addEventListener("click", function () {
-  moreServices.style.display = "flex";
+  moreServices.classList.remove("hidden");
   moreBtn.remove();
 });
 
@@ -47,19 +47,3 @@ window.onscroll = function () {
     backToTop.classList.remove("back-to-top");
   }
 };
-
-// const burger = document.querySelector("#burger");
-// const navMenu = document.querySelector("#nav-menu");
-
-// burger.addEventListener("click", function () {
-//   burger.classList.toggle("burger-active");
-//   navMenu.classList.toggle("hidden");
-// });
-
-// // Klik diluar burger
-// window.addEventListener("click", function (e) {
-//   if (e.target != burger && e.target != navMenu) {
-//     burger.classList.remove("burger-active");
-//     navMenu.classList.add("hidden");
-//   }
-// });
