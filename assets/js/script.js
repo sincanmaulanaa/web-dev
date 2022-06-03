@@ -2,10 +2,10 @@
 const moreServices = document.getElementById("more-services");
 const moreBtn = document.getElementById("more");
 
-moreServices.classList.remove("display");
+moreServices.style.display = "none";
 
 moreBtn.addEventListener("click", function () {
-  moreServices.classList.add("display");
+  moreServices.style.display = "flex";
   moreBtn.remove();
 });
 
