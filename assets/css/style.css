@@ -163,6 +163,7 @@ main .buttons {
   align-items: center;
   transition: all;
   transition-duration: 400ms;
+  color: #313131;
 }
 
 .watch-video .play-icon {
@@ -270,6 +271,10 @@ h3 {
 
 #service .btn-primary {
   margin-top: 90px;
+}
+
+.display {
+  display: flex;
 }
 
 section#portfolio {
@@ -635,6 +640,7 @@ nav svg {
   }
 }
 
+/* Mobile view */
 @media (max-width: 640px) {
   body {
     font-size: 14px;
@@ -742,8 +748,12 @@ nav svg {
 
   section#service {
     padding: 80px 0;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
+  }
+
+  .service-card-wrapper {
+    display: inline-block;
   }
 
   section#service span {
@@ -756,7 +766,14 @@ nav svg {
   }
 
   .service-card {
-    width: 385px;
+    width: auto;
+    max-width: 385px;
+    margin: 0;
+    margin-bottom: 18px;
+  }
+
+  .display {
+    display: inline-block;
   }
 
   section#portfolio {
@@ -797,19 +814,21 @@ nav svg {
   }
 
   aside {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    padding: 80px 4px;
+    padding: 80px 0;
+    text-align: center;
   }
 
   aside .developers-wrapper {
-    flex-direction: column;
+    display: inline-block;
+    margin: 0 auto;
   }
 
   .developers-wrapper .developer-item {
     max-width: 350px;
-    padding: 60px 50px;
-    margin: 20px 0px;
+    padding: 60px 90px;
+    margin: 18px 0;
   }
 
   section#message {
