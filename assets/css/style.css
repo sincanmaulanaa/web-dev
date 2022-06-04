@@ -283,7 +283,7 @@ section#service .hidden {
 }
 
 .hidden {
-  display: none;
+  display: flex;
 }
 
 section#portfolio {
